@@ -1,0 +1,31 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Виртуальное окружение (uv) ---
+.venv/
+# uv.lock НЕ игнорируем — он фиксирует версии для воспроизводимости
+
+# --- Данные и веса моделей (не тащим в git) ---
+data/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+
+# --- Jupyter ---
+*.ipynb_checkpoints
+
+# --- ОС / редакторы ---
+.DS_Store
+Thumbs.db
+# .idea/ оставляем под вопросом — JetBrains-настройки проекта.
+# Если не хочешь их в git, раскомментируй следующую строку:
+# .idea/
+
+# --- Секреты ---
+.env
+*.key
